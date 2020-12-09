@@ -67,13 +67,7 @@ header .textos-header{
 
 }
 .item{
-    width: 200px;
-    height: 200px;
-    background-color: blue;
-    margin: 50px auto;
-    padding-top: 70px;
-    font-size: 3em;
-    text-align:center;
+   text-align:center;
 }
 
 }
