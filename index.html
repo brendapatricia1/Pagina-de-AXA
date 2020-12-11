@@ -10,17 +10,15 @@
     <link href="css/bootstrap.min.css">
     <link href="css/aos.css">
     <link href="css/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
      
 <body>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
-   <script type="js/javascript">
-   <AOS.init({
-       duration : 1200,
-   })
-    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <header>
             
 <nav>
@@ -33,10 +31,13 @@
         </nav>
        
         <section class="textos-header">
-
-            <div class="item" data-aos="fade-down"><h1>¡SEGUROS TADEO!</h1></div>
-            <div class="item" data-aos="fade-down"><p>Somos tu mejor opción</p></div>
-
+          <div class="animaciones-aos">
+              <div data-aos="fade-up">
+                  <h1>SEGUROS TADEO</h1>
+                  <P><h5>Somos tu mejor opción</h5></P>
+                  <p><i>La aseguradora #1 en todo México</i></p>
+              </div>
+          </div>
  </section>
 
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
@@ -49,13 +50,22 @@
         <section class="contenedor sobre-nosotros">
             <h2 class="titulo">EN AXA NOS OCUPAMOS POR LO QUE TE PREOCUPA</h2>
             <div class="contenedor-sobre-nosotros">
-                <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
+                <div class="animaciones-aos">
+                    <div class="zoom-in">
+                        <img src="img/ilustracion2.svg" alt="" class="imagen-about-us">
+                    </div>
+                </div>
                 <div class="contenido-textos">
-                    <h3><span>1</span>Tus seguros ahora con meses sin intereses</h3>
-                    <p>Pregunta por el servicio que requieras</p>
-                    <h3><span>2</span>Descuentos</h3>
-                    <p>Conoce nuestros términos y condiciones</p>
-                    
+                    <div class="animaciones-aos">
+                       <div data-aos="fade-left">
+                        <h3><span>1</span>Tus seguros ahora con meses sin intereses</h3>
+                        <p>Pregunta por el servicio que requieras</p>
+                       </div> 
+                       <div data-aos="fade-left"  data-aos-delay="400">
+                        <h3><span>2</span>Descuentos</h3>
+                        <p>Conoce nuestros términos y condiciones</p>
+                    </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -64,12 +74,15 @@
                 <h2 class="titulo">Conocenos</h2>
                 <div class="galeria-port">
                     <div class="imagen-port">
-                        <img src="img/Seguro de auto.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Seguro de auto</p>
-                        </div>
-                    </div>
+                        <div class="animaciones-aos">
+                            <div data-aos="flip-left">
+                                <img src="img/Seguro de auto.jpg" alt="">
+                                <div class="hover-galeria">
+                                    <img src="img/icono1.png" alt="">
+                                    <p>Seguro de auto</p>
+                                </div>
+                            </div>  
+                        </div>                           
                     <div class="imagen-port">
                         <img src="img/segurodevida.jpg" alt="">
                         <div class="hover-galeria">
@@ -119,7 +132,7 @@
                             <p>Seguro maritimo</p>
                         </div>
                     </div>
-                </div>
+                  </div>
             </div>
         </section>
         <section class="clientes contenedor">
@@ -185,6 +198,14 @@
     </footer>
     <br>
    
+    <script>
+        AOS.init({
+            offset: 200,
+            delay: 300,
+            duration:500,
+            easing:'ease'
+        });
+      </script>
 </body>
 
 </html>
