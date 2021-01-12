@@ -529,3 +529,9 @@ footer{
 .slick-next{
     right: 0px;
 }
+ul.redes{
+    width: 1220px;
+    right: 1000px;
+    text-align: right;
+    align-content: right;
+}
