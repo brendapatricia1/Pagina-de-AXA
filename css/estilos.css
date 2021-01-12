@@ -529,3 +529,51 @@ footer{
 .slick-next{
     right: 0px;
 }
+/*seccion sobre mi */
+#sobre-mi .contenedor-sobremi{
+	display: flex;
+	justify-content: space-around;
+}
+#sobre-mi .texto{
+	width: 42%;
+}
+.contenedor-servicios{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	color: #fff;
+}
+.servicio{
+	width: 24%;
+	padding: 34px 30px 38px 30px;
+	border-radius: 10px;
+	margin-bottom: 40px;
+	position: relative;
+}
+.servicio h4{
+	font-size: 30px;
+	margin: 0;
+}
+.servicio p{
+	margin-bottom: 20px;
+	height: 194px;
+}
+.contenedor-servicios .violeta{
+	background-image: linear-gradient(to top,#5055df, #6d68f3);
+	box-shadow: 0 12px 30px 0 rgba(80, 85, 223, 0.37);
+}
+.contenedor-servicios .celeste{
+	background-image: linear-gradient(to top,#40a8f9, #5cb8ff);
+	box-shadow: 0 12px 30px 0 rgba(86, 163, 222, 0.3);
+}
+.ondas{
+	position:absolute;
+	left: 0;
+	bottom: 0;
+}
+button.owl-prev,button.owl-next{
+	font-size: 40px !important;
+}
+span{
+	color:#71bcfa:
+}
