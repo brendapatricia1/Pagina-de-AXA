@@ -67,30 +67,7 @@ header .textos-header{
 
 }
 /*a lo pendejo*/
-ul {
-    list-style: disc;
-    margin: 0 0 2em 0;
-    padding-left: 1em;
-}
 
-    ul li {
-        padding-left: 0.5em;
-    }
-
-    ul.alt {
-        list-style: none;
-        padding-left: 0;
-    }
-
-        ul.alt li {
-            border-top: solid 1px #c9c9c9;
-            padding: 0.5em 0;
-        }
-
-            ul.alt li:first-child {
-                border-top: 0;
-                padding-top: 0;
-            }
 #header nav {
     position: fixed;
     right: 2em;
@@ -352,6 +329,32 @@ white-space: nowrap;
         }
 
 }
+
+body.is-menu-visible #wrapper {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.25;
+}
+
+body.is-menu-visible #menu {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    visibility: visible;
+}
+
+    body.is-menu-visible #menu > * {
+        opacity: 1;
+    }
+
+    body.is-menu-visible #menu .close {
+        -moz-transform: scale(1.0) rotate(0deg);
+        -webkit-transform: scale(1.0) rotate(0deg);
+        -ms-transform: scale(1.0) rotate(0deg);
+        transform: scale(1.0) rotate(0deg);
+        opacity: 1;
+    }
 /*aqui acabo eso*/
 .item{
   text-align:center;
