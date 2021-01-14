@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+  .boton{
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #ff8a8a;
+  }
 
 body {
     font-family: 'open sans';
@@ -253,7 +263,6 @@ main .sobre-nosotros{
     font-weight: 300;
     text-align: justify;
 }
-
 /* footer */
 
 footer{
@@ -366,7 +375,7 @@ footer{
 }
 
 body{
-    background: #f5f5f5;
+    background: rgb(245, 245, 245);
 }
 
 .container-servicio{
@@ -485,11 +494,24 @@ text-align:initial;
         font-size: 20px;
     }
 }
-
+/* contenedor de historia*/
+.contenedor-historia{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 50px;
+    background: rgb(245, 244, 244);
+}
+.contenedor-historia p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 15px;
+    text-align: justify;
+}
 /* carrusel */
 .Carousel{
     width: 100%;
-    margin: 0px 60px;
+    margin: 5px 0px;
 }
 .Carousel h2{
     font-size: 26px;
@@ -597,7 +619,7 @@ text-align:initial;
 }
 
 .title{
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 60px;
 }
 
@@ -607,21 +629,38 @@ text-align:initial;
 }
 
 .container-cotiza img{
-    width: 200px;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    width: 600px;
+    float:initial;
+    margin-right: 60px;
+    margin-bottom: 60px;
 }
 
 .container-cotiza p{
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+/*div de cosa en cotiza*/
+.cosa{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+    background: #f6f6f6;
+}
+.titulo{
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+.cosa p{
+    font-size: 23px;
     font-weight: 300;
     margin-top: 20px;
 }
 /*Footer*/
 #footer{
-    padding: 5em 0 6em 0 ;
-    background-color: white;
+    padding: 5em 0 6em 20 ;
+    background-color: rgb(248, 246, 246);
 }
 #footer > .inner {
     display: -moz-flex;
