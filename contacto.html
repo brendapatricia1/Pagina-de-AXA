@@ -18,6 +18,15 @@
 <body>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+<php 
+$servidor = "localhost";
+$usuario = "axaveracruz16";
+$contrasena = "axaveracruz1";
+$db=mysql_connect($localhost,$axaveracruz16,$axaveracruz1);
+mysql_select_db($Comentarios,$db);
+
+mysql_close($db)
+>
  <header>
             
 <nav>
@@ -48,13 +57,16 @@
             <form method="post">
                 <div class="fields">
                     <div class="field half">
-                        <input type="text" name="Nombre" id="name" placeholder="Nombre" />
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" />
+                    </div>
+                    <div class="field half">
+                        <input type="tel" name="telefono" id="telefono" placeholder="Número telefonico" />
                     </div>
                     <div class="field half">
                         <input type="email" name="email" id="email" placeholder="Correo electronico" />
                     </div>
                     <div class="field">
-                        <textarea name="message" id="comentarios" placeholder="Deje su mensaje aquí"></textarea>
+                        <textarea name="text" id="comentario" placeholder="Deje su mensaje aquí"></textarea>
                     </div>
                 </div>
                 <ul class="actions">
