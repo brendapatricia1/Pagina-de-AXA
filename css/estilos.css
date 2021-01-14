@@ -896,10 +896,10 @@ label {
     margin: 0 0 1em 0;
 }
 
-input[type="nombre"],
+input[type="name"],
 input[type="password"],
 input[type="email"],
-input[type="telefono"],
+input[type="tel"],
 select,
 textarea {
     -moz-appearance: none;
@@ -918,19 +918,19 @@ textarea {
     width: 100%;
 }
 
-    input[type="nombre"]:invalid,
+    input[type="name"]:invalid,
     input[type="password"]:invalid,
     input[type="email"]:invalid,
-    input[type="telefono"]:invalid,
+    input[type="tel"]:invalid,
     select:invalid,
     textarea:invalid {
         box-shadow: none;
     }
 
-    input[type="nombre"]:focus,
+    input[type="name"]:focus,
     input[type="password"]:focus,
     input[type="email"]:focus,
-    input[type="telefono"]:focus,
+    input[type="tel"]:focus,
     select:focus,
     textarea:focus {
         border-bottom-color: #f2849e;
@@ -959,7 +959,7 @@ select {
         display: none;
     }
 
-input[type="nombre"],
+input[type="name"],
 input[type="password"],
 input[type="email"],
 select {
@@ -970,7 +970,15 @@ textarea {
     padding: 0;
     min-height: 3.75em;
 }
-
+input[type="submit"]{
+    position: relative;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 1px;
+    background-color: darkgray;
+    font:14px normal normal uppercase arial;
+}
 input[type="checkbox"],
 input[type="radio"] {
     -moz-appearance: none;
