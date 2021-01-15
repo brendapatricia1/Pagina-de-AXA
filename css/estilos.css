@@ -57,8 +57,10 @@ nav{
 nav > a{
     color:rgb(255, 255, 255);
     font-weight: 300;
-    text-decoration: none;
+    text-decoration:hsla(317, 45%, 52%, 0.664);
     margin-right: 10px;
+    font-size: 20px;
+    
 }
 
 nav > a:hover{
@@ -83,8 +85,8 @@ header .textos-header{
 }
 
 .textos-header h1{
-    font-size: 50px;
-    color:rgb(0, 0, 0);
+    font-size: 70px;
+    color:rgb(15, 0, 83);
 }
 
 .textos-header h2{
@@ -92,7 +94,11 @@ header .textos-header{
     font-weight: 300;
     color:rgb(0, 0, 0);
 }
-
+.textos-header p{
+    color: hsl(0, 0%, 13%);
+    font-size: 40px;
+   
+}
 .wave{
     position: absolute;
     bottom: 0;
